@@ -280,14 +280,15 @@ void UnitConverterDataLoader::GetUnits(_In_ unordered_map<ViewMode, vector<Order
     unitMap.emplace(ViewMode::Temperature, tempUnits);
 
     vector<OrderedUnit> timeUnits;
-    timeUnits.push_back(OrderedUnit{ UnitConverterUnits::Time_Day, GetLocalizedStringName(L"UnitName_Day"), GetLocalizedStringName(L"UnitAbbreviation_Day"), 6 });
-    timeUnits.push_back(OrderedUnit{ UnitConverterUnits::Time_Hour, GetLocalizedStringName(L"UnitName_Hour"), GetLocalizedStringName(L"UnitAbbreviation_Hour"), 5 ,true, false, false });
-    timeUnits.push_back(OrderedUnit{ UnitConverterUnits::Time_Microsecond, GetLocalizedStringName(L"UnitName_Microsecond"), GetLocalizedStringName(L"UnitAbbreviation_Microsecond"), 1 });
-    timeUnits.push_back(OrderedUnit{ UnitConverterUnits::Time_Millisecond, GetLocalizedStringName(L"UnitName_Millisecond"), GetLocalizedStringName(L"UnitAbbreviation_Millisecond"), 2 });
-    timeUnits.push_back(OrderedUnit{ UnitConverterUnits::Time_Minute, GetLocalizedStringName(L"UnitName_Minute"), GetLocalizedStringName(L"UnitAbbreviation_Minute"), 4 ,false, true, false });
-    timeUnits.push_back(OrderedUnit{ UnitConverterUnits::Time_Second, GetLocalizedStringName(L"UnitName_Second"), GetLocalizedStringName(L"UnitAbbreviation_Second"), 3 });
-    timeUnits.push_back(OrderedUnit{ UnitConverterUnits::Time_Week, GetLocalizedStringName(L"UnitName_Week"), GetLocalizedStringName(L"UnitAbbreviation_Week"), 7 });
-    timeUnits.push_back(OrderedUnit{ UnitConverterUnits::Time_Year, GetLocalizedStringName(L"UnitName_Year"), GetLocalizedStringName(L"UnitAbbreviation_Year"), 8 });
+    timeUnits.push_back(OrderedUnit{ UnitConverterUnits::Time_Day, GetLocalizedStringName(L"UnitName_Day"), GetLocalizedStringName(L"UnitAbbreviation_Day"), 7 });
+    timeUnits.push_back(OrderedUnit{ UnitConverterUnits::Time_Hour, GetLocalizedStringName(L"UnitName_Hour"), GetLocalizedStringName(L"UnitAbbreviation_Hour"), 6 ,true, false, false });
+    timeUnits.push_back(OrderedUnit{ UnitConverterUnits::Time_Microsecond, GetLocalizedStringName(L"UnitName_Microsecond"), GetLocalizedStringName(L"UnitAbbreviation_Microsecond"), 2 });
+    timeUnits.push_back(OrderedUnit{ UnitConverterUnits::Time_Millisecond, GetLocalizedStringName(L"UnitName_Millisecond"), GetLocalizedStringName(L"UnitAbbreviation_Millisecond"), 3 });
+    timeUnits.push_back(OrderedUnit{ UnitConverterUnits::Time_Nanoseconds, GetLocalizedStringName(L"UnitName_Nanoseconds"), GetLocalizedStringName(L"UnitAbbreviation_Nanoseconds"), 1 });
+    timeUnits.push_back(OrderedUnit{ UnitConverterUnits::Time_Minute, GetLocalizedStringName(L"UnitName_Minute"), GetLocalizedStringName(L"UnitAbbreviation_Minute"), 5 ,false, true, false });
+    timeUnits.push_back(OrderedUnit{ UnitConverterUnits::Time_Second, GetLocalizedStringName(L"UnitName_Second"), GetLocalizedStringName(L"UnitAbbreviation_Second"), 4 });
+    timeUnits.push_back(OrderedUnit{ UnitConverterUnits::Time_Week, GetLocalizedStringName(L"UnitName_Week"), GetLocalizedStringName(L"UnitAbbreviation_Week"), 8 });
+    timeUnits.push_back(OrderedUnit{ UnitConverterUnits::Time_Year, GetLocalizedStringName(L"UnitName_Year"), GetLocalizedStringName(L"UnitAbbreviation_Year"), 9 });
     unitMap.emplace(ViewMode::Time, timeUnits);
 
     vector<OrderedUnit> speedUnits;
@@ -463,6 +464,7 @@ void UnitConverterDataLoader::GetConversionData(_In_ unordered_map<ViewMode, uno
             { ViewMode::Time, UnitConverterUnits::Time_Week, 604800 },
             { ViewMode::Time, UnitConverterUnits::Time_Year, 31557600 },
             { ViewMode::Time, UnitConverterUnits::Time_Millisecond, 0.001 },
+            { ViewMode::Time, UnitConverterUnits::Time_Nanoseconds, 0.000000001 },
             { ViewMode::Time, UnitConverterUnits::Time_Microsecond, 0.000001 },
             { ViewMode::Time, UnitConverterUnits::Time_Minute, 60 },
             { ViewMode::Time, UnitConverterUnits::Time_Hour, 3600 },

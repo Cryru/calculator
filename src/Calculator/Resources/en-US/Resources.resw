@@ -3371,4 +3371,12 @@
     <value>Microsoft Services Agreement</value>
     <comment>Displayed on a link to the Microsoft Services Agreement in the about this app information</comment>
   </data>
+  <data name="UnitAbbreviation_Nanoseconds" xml:space="preserve">
+    <value>ns</value>
+    <comment>An abbreviation for a measurement unit of time</comment>
+  </data>
+  <data name="UnitName_Nanoseconds" xml:space="preserve">
+    <value>Nanoseconds</value>
+    <comment>A measurement unit for time. (Please choose the most appropriate plural form to fit any number between 0 and 999,999,999,999,999)</comment>
+  </data>
 </root>

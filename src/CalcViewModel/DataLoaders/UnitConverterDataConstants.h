@@ -162,6 +162,7 @@ namespace CalculatorApp
             Data_Zebibytes = UnitStart + 162,
             Data_Zetabits = UnitStart + 163,
             Data_Zetabytes = UnitStart + 164,
+            Time_Nanoseconds = UnitStart + 165,
             UnitEnd = Data_Zetabytes
         };
     }
